@@ -240,12 +240,4 @@ body{
     transform:translateY(0);
 }
 
-.container1 button{
-    width:100%;
-    font-size:20px;
-    padding:15px;
-}
 
-.titulo{
-    margin-top:50px;
-}
