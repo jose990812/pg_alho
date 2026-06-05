@@ -281,6 +281,8 @@ body{
         width: 100%;
         font-size: 20px;
         margin-top: 10%;
+        box-sizing: border-box;
+        max-width: 100%;
     }
 
     .container2 {
