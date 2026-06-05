@@ -241,3 +241,21 @@ body{
 }
 
 
+@media (max-width: 768px){
+
+    .container1{
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .container1 button{
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+        padding: 12px;
+        margin-top: 30px;
+    }
+
+}
+
