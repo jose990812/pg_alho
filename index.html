@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class = "containers">
+
+        <div class = "container1">
+            <h1>Alho no Pote</h1>
+            <h1>Triturado</h1>
+            <h4>
+                Praticidade e sabor fresco na medida certa.
+                Tempere seus pratos com a qualidade do alho recém-triturado, sem esforço!
+            </h4>
+
+            <div>
+                <p class = "item"> Sempre Fresco</p>
+                <p class = "item"> Sem Conservantes</p>
+                <p class = "item"> Prático</p>
+            </div>
+
+            <button>Saiba Mais</button>
+        </div>
+
+        <div class= "container2">
+            <img src="img/capa.jpg" alt="Imagem de um alho">
+        </div>
+
+    </div>
+
+    <h1 class = "titulo">Por Que Escolher Nosso Alho?</h1>
+    <p class = "subtitulo">
+        Qualidade premium que transforma suas receitas
+    </p>
+
+    <div class="containers2">
+
+        <div>
+            <span><img src="img/chapeu.png" alt=""></span>
+            <h2>Sabor Autêntico</h2>
+            <p>Alho fresco triturado na hora, preservando todo o sabor e aroma</p>
+        </div>
+
+        <div>
+            <span><img src="img/relogio.png" alt=""></span>
+            <h2>Praticidade</h2>
+            <p>Pronto para usar! Economize tempo na cozinha sem perder qualidade</p>
+        </div>
+
+        <div>
+            <span><img src="img/folha.png" alt=""></span>
+            <h2>100% Natural</h2>
+            <p>Sem conservantes ou aditivos químicos. Apenas alho puro</p>
+        </div>
+
+        <div>
+            <span><img src="img/coracao.png" alt=""></span>
+            <h2>Saúde em Primeiro Lugar</h2>
+            <p>Rico em nutrientes e propriedades benéficas para sua saúde</p>
+        </div>
+
+    </div>
+    
+    <h1 class = "titulo">Nossa Qualidade em Fotos</h1>
+    <p class = "subtitulo">
+        Veja de perto o produto que vai transformar sua cozinha
+    </p>
+
+    <div class="containers3">
+
+        <div>
+            <img src="img/pote.png" alt="">
+        </div>
+
+        <div>
+            <img src="img/foto1.jpg" alt="">
+        </div>
+
+        <div>
+           <img src="img/foto2.png" alt="">
+        </div>
+
+        <div>
+            <img src="img/foto3.jpg" alt="">
+            <span>Saúde</span>
+        </div>
+
+    </div>
+
+    <div class = "ultimo_container">
+
+        <h1 class = "titulo">Pronto Para Experimentar?</h1>
+        
+        <p class = "subtitulo">
+            Entre em contato agora e descubra como nosso alho triturado pode transformar suas receitas!
+        </p>
+
+        <button><span class = "imgs"><img src="img/telefone.png" alt=""></span><b> Fale conosco no WhatsApp</b></button>
+
+        <br>
+
+        <p>✅ Resposta rápida garantida!</p>
+    </div>
+
+
+<script>
+    const cards = document.querySelectorAll('.containers2 div, .containers3 div');
+
+    const observerCards = new IntersectionObserver((entries)=>{
+
+        entries.forEach((entry)=>{
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add('apareceu');
+
+            }
+
+        });
+
+    },{
+        threshold:0.8
+    });
+
+    cards.forEach((card)=>{
+        observerCards.observe(card);
+    });
+</script>
+</body>
+</html>
